@@ -4,11 +4,12 @@ function init(dark, locs = ["https://raw.githubusercontent.com/minin-prod/minui.
 	// Body
 	const b = document.getElementsByTagName("body")[0];
 
-	var link = new HTMLLinkElement();
-	link.rel = "stylesheet";
-	link.href = locs[0];
+	var link = document.createElement("link");
+    link.setAttribute("rel", "stylesheet");
+    link.setAttribute("type", "text/css");
+	link.setAttribute("href", locs[0]);
 	b.appendChild(link);
 
-	dark ? link.href = locs[2] : link.href = locs[1];
+	dark ? link.setAttribute("href", locs[2]) : link.setAttribute("href", locs[1]);
 	b.appendChild(link);
 }
