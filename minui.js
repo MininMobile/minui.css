@@ -7,12 +7,8 @@ function init(dark, locs = ["https://raw.githubusercontent.com/minin-prod/minui.
 	var link = new HTMLLinkElement();
 	link.rel = "stylesheet";
 	link.href = locs[0];
-
 	b.appendChild(link);
 
-	if (dark) {
-		
-	} else {
-
-	}
+	dark ? link.href = locs[2] : link.href = locs[1];
+	b.appendChild(link);
 }
