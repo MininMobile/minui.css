@@ -19,3 +19,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
+
+a.m-btn, button.m-btn, span.m-btn {
+	border-radius: 3px;
+	background: white;
+	color: black;
+	padding: 1em;
+}
