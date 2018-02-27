@@ -1,6 +1,6 @@
-function init(dark, locs = ["https://raw.githubusercontent.com/minin-prod/minui.css/master/minui-common.css",
-							"https://raw.githubusercontent.com/minin-prod/minui.css/master/minui-light.css",
-							"https://raw.githubusercontent.com/minin-prod/minui.css/master/minui-dark.css"]) {
+function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master/minui-common.css",
+							"https://raw.githack.com/minin-prod/minui.css/master/minui-light.css",
+							"https://raw.githack.com/minin-prod/minui.css/master/minui-dark.css"]) {
 	// Body
 	const b = document.getElementsByTagName("body")[0];
 
