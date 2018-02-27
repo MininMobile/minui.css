@@ -4,12 +4,16 @@ function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master
 	const h = document.getElementsByTagName("head")[0]; // Head
 	const b = document.getElementsByTagName("body")[0]; // Body
 
-	var link = document.createElement("link");
-    link.setAttribute("rel", "stylesheet");
-    link.setAttribute("type", "text/css");
-	link.setAttribute("href", locs[0]);
-	h.appendChild(link);
+	var commonLink = document.createElement("link");
+	commonLink.setAttribute("rel", "stylesheet");
+	commonLink.setAttribute("type", "text/css");
+	commonLink.setAttribute("href", locs[0]);
 
-	dark ? link.setAttribute("href", locs[2]) : link.setAttribute("href", locs[1]);
-	h.appendChild(link);
+	var themeLink = document.createElement("link");
+	themeLink.setAttribute("rel", "stylesheet");
+	themeLink.setAttribute("type", "text/css");
+	dark ? themeLink.setAttribute("href", locs[2]) : themeLink.setAttribute("href", locs[1])
+
+	h.appendChild(commonLink);
+	h.appendChild(themeLink);
 }
