@@ -1,11 +1,7 @@
 function init(dark) {
-	if (dark.valueOf() == Boolean) {
-		if (dark) {
-			
-		} else {
-			
-		}
+	if (dark) {
+		
 	} else {
-		throw new TypeError("Argument 'dark' is not a boolean");
+
 	}
 }
