@@ -52,5 +52,7 @@ function createRipple(e) {
 	c.style.top = e.clientY - rect.top - d/2 + 'px';
 
 	c.classList.add("ripple");
+
+	setTimeout(() => { c.remove(); }, 600);
 }
 //#endregion
