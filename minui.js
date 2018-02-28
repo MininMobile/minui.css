@@ -1,3 +1,12 @@
+/*
+   _ __ ___ (_)_ __ (_)_ __    _   _(_)
+  | '_ ` _ \| | '_ \| | '_ \  | | | | |
+  | | | | | | | | | | | | | | | |_| | |
+  |_| |_| |_|_|_| |_|_|_| |_|  \__,_|_|
+  
+  © Minin Productions 2018
+*/
+
 function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master/minui-common.css",
 							"https://raw.githack.com/minin-prod/minui.css/master/minui-light.css",
 							"https://raw.githack.com/minin-prod/minui.css/master/minui-dark.css"]) {
