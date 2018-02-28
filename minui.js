@@ -25,4 +25,33 @@ function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master
 
 	h.appendChild(commonLink);
 	h.appendChild(themeLink);
+
+	createButtons();
 }
+
+//// CSS FX ////
+
+//#region Buttons
+function createButtons() {
+	let buttons = document.getElementsByClassName("m-btn");
+	Array.prototype.forEach.call(buttons, (b) => b.addEventListener("click", createRipple));
+}
+
+/** @param {Element} e */
+function createRipple(e) {
+	var c = document.createElement("div");
+	this.appendChild(c);
+
+	var d = Math.max(this.clientWidth, this.clientHeight);
+
+	c.style.width = c.style.height = d + 'px';
+
+	var rect = this.getBoundingClientRect();
+	c.style.left = e.clientX - rect.left -d/2 + 'px';
+	c.style.top = e.clientY - rect.top - d/2 + 'px';
+
+	console.log(this);
+
+	c.classList.add("ripple");
+}
+//#endregion
