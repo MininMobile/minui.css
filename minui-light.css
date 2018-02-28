@@ -7,3 +7,11 @@
   © Minin Productions 2018
 */
 
+.m-btn {
+	background: #fff;
+	color: #000;
+}
+
+.m-btn:focus {
+	background: #aaa
+}

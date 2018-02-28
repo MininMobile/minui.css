@@ -11,3 +11,12 @@ body {
 	background: #111;
 	color: #ddd;
 }
+
+.m-btn {
+	background: #111;
+	color: #ddd;
+}
+
+.m-btn:focus {
+	background: #333
+}
