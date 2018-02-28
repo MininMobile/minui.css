@@ -26,6 +26,7 @@ function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master
 	h.appendChild(commonLink);
 	h.appendChild(themeLink);
 
+	// Run Other Functions
 	createButtons();
 }
 
@@ -49,8 +50,6 @@ function createRipple(e) {
 	var rect = this.getBoundingClientRect();
 	c.style.left = e.clientX - rect.left -d/2 + 'px';
 	c.style.top = e.clientY - rect.top - d/2 + 'px';
-
-	console.log(this);
 
 	c.classList.add("ripple");
 }
