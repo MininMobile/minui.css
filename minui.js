@@ -53,6 +53,6 @@ function createRipple(e) {
 
 	c.classList.add("ripple");
 
-	setTimeout(() => { c.remove(); }, 600);
+	setTimeout(() => { c.remove(); }, 300);
 }
 //#endregion
