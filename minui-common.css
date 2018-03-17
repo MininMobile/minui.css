@@ -52,3 +52,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes ripple { to { transform: scale(2.5); opacity: 0; } }
+
+@media (orientation: landscape) and (max-height: 480px) {
+	.m-nav {
+		height: 3rem;
+		min-height: 3rem;
+		line-height: 3rem;
+	}
+}
+
+@media (min-width: 480px) {
+	.m-nav {
+		height: 4rem;
+		min-height: 4rem;
+		line-height: 4rem;
+	}
+}
