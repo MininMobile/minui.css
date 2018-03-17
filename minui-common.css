@@ -89,15 +89,15 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	height: 100%;
+	flex-direction: column;
 }
 
 .m-section--title {
-	
+	margin: 0 auto;
 }
 
 .m-section--sub {
-
+	margin: 0 auto;
 }
 
 .m-btn {
@@ -135,6 +135,10 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 3rem;
 	}
 
+	.m-section {
+		height: calc(100vh - 3rem);
+	}
+
 	.m-nav--menu {
 		padding-top: calc(3rem + 1em);
 	}
@@ -149,6 +153,10 @@ h1, h2, h3, h4, h5, h6 {
 		height: 4rem;
 		min-height: 4rem;
 		line-height: 4rem;
+	}
+
+	.m-section {
+		height: calc(100vh - 4rem);
 	}
 
 	.m-nav--menu {
