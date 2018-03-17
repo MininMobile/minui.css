@@ -12,6 +12,10 @@ body {
 	color: #ddd;
 }
 
+.m-nav {
+	background: #444;
+}
+
 .m-btn {
 	background: #111;
 	color: #ddd;
