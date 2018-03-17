@@ -63,7 +63,6 @@ function createNavbar(dark) {
 	body.insertBefore(navMenu, body.firstChild);
 
 	navMenuBtn.children[0].addEventListener("click", (e) => {
-		console.log("oof")
 		if (navMenu.style.width == "0px") {
 			navMenu.style.width = "25%";
 		} else {
