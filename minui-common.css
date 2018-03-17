@@ -45,10 +45,17 @@ h1, h2, h3, h4, h5, h6 {
 .m--nav-menu-button {
 	height: calc(100% - 2em);
 	margin: auto 1em;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: background 0.2s;
+}
+
+.m--nav-menu-button:hover {
+	background: rgba(255,255,255,0.5);
 }
 
 .m-nav .m-nav--data {
-	flex: 2;
+	flex: 3;
 
 	display: flex;
 	align-content: center;
@@ -81,11 +88,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .m-btn .ripple {
-    border-radius: 50%;
-    background: rgba(235, 235, 235, 0.7);
+	border-radius: 50%;
+	background: rgba(235, 235, 235, 0.7);
 	position: absolute;
-    transform: scale(0);
-    animation: ripple 0.3s;
+	transform: scale(0);
+	animation: ripple 0.3s;
 }
 
 @keyframes ripple { to { transform: scale(2.5); opacity: 0; } }

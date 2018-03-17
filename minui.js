@@ -35,11 +35,16 @@ function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master
 
 //#region Navbar
 function createNavbar(dark) {
+	var body = document.getElementsByTagName("body")[0];
+
 	var nav = document.getElementsByClassName("m-nav")[0];
 	var navMenu = document.getElementsByClassName("m-nav--menu")[0];
 
+	var navMenuHTML = document.createElement("div");
+	navMenuHTML.classList.add("n-nav--menu");
+	navMenuHTML.innerHTML = navMenu.innerHTML;
+
 	if (nav.classList.contains("m-nav--fixed")) {
-		var body = document.getElementsByTagName("body")[0];
 		var padding = document.createElement("div");
 		padding.classList.add("m-nav--height");
 
@@ -51,6 +56,10 @@ function createNavbar(dark) {
 	nav.insertBefore(navMenuBtn, nav.firstChild);
 	
 	navMenuBtn.innerHTML = `<img src='https://svgshare.com/i/5u4.svg' class='m--nav-menu-button'/>`;
+
+	navMenu.remove();
+	navMenu = navMenuHTML;
+	body.insertBefore(navMenu, body.firstChild);
 }
 //#endregion
 
