@@ -28,14 +28,15 @@ function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master
 
 	// Run Other Functions
 	createButtons();
-	createNavbar();
+	createNavbar(dark);
 }
 
 //// CSS FX ////
 
 //#region Navbar
-function createNavbar() {
+function createNavbar(dark) {
 	var nav = document.getElementsByClassName("m-nav")[0];
+	var navMenu = document.getElementsByClassName("m-nav--menu")[0];
 
 	if (nav.classList.contains("m-nav--fixed")) {
 		var body = document.getElementsByTagName("body")[0];
@@ -44,6 +45,8 @@ function createNavbar() {
 
 		body.insertBefore(padding, body.firstChild);
 	}
+	
+	navMenu.innerHTML = `<img src='https://svgshare.com/i/5u4.svg' class='m--nav-menu-button'/>`;
 }
 //#endregion
 
