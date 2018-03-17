@@ -16,6 +16,18 @@ body {
 	background: #444;
 }
 
+.m-nav--menu {
+	background: #444;
+}
+
+.m-nav--menu * {
+	transition: background 0.3s;
+}
+
+.m-nav--menu *:hover {
+	background: #222;
+}
+
 .m-btn {
 	background: #111;
 	color: #ddd;

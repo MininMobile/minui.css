@@ -41,7 +41,7 @@ function createNavbar(dark) {
 	var navMenu = document.getElementsByClassName("m-nav--menu")[0];
 
 	var navMenuHTML = document.createElement("div");
-	navMenuHTML.classList.add("n-nav--menu");
+	navMenuHTML.classList.add("m-nav--menu");
 	navMenuHTML.innerHTML = navMenu.innerHTML;
 
 	if (nav.classList.contains("m-nav--fixed")) {
@@ -59,7 +59,17 @@ function createNavbar(dark) {
 
 	navMenu.remove();
 	navMenu = navMenuHTML;
+	navMenu.style.width = "0px";
 	body.insertBefore(navMenu, body.firstChild);
+
+	navMenuBtn.children[0].addEventListener("click", (e) => {
+		console.log("oof")
+		if (navMenu.style.width == "0px") {
+			navMenu.style.width = "25%";
+		} else {
+			navMenu.style.width = "0px";
+		}
+	});
 }
 //#endregion
 

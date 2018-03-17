@@ -31,8 +31,23 @@ h1, h2, h3, h4, h5, h6 {
 	top: 0;
 }
 
-.m-nav .m-nav--menu {
-	/* soon tm */
+.m-nav--menu {
+	margin: 0;
+	padding: 0;
+	left: 0;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	box-shadow: 0 0 0.7em #000;
+	transition: width 0.2s;
+}
+
+.m-nav--menu * {
+	display: block;
+	margin: 0;
+	padding: 0.7em 1.2em;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .m-nav .m-nav--menu-button {
@@ -104,6 +119,10 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 3rem;
 	}
 
+	.m-nav--menu {
+		padding-top: calc(3rem + 1em);
+	}
+
 	.m-nav--height {
 		height: 3rem;
 	}
@@ -114,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 		height: 4rem;
 		min-height: 4rem;
 		line-height: 4rem;
+	}
+
+	.m-nav--menu {
+		padding-top: calc(4rem + 1em);
 	}
 
 	.m-nav--height {

@@ -12,6 +12,19 @@
 	color: #fff;
 }
 
+.m-nav--menu {
+	background: #ccc;
+	color: #000;
+}
+
+.m-nav--menu * {
+	transition: background 0.3s;
+}
+
+.m-nav--menu *:hover {
+	background: #999;
+}
+
 .m-btn {
 	background: #fff;
 	color: #000;
