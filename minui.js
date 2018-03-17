@@ -45,8 +45,12 @@ function createNavbar(dark) {
 
 		body.insertBefore(padding, body.firstChild);
 	}
+
+	var navMenuBtn = document.createElement("div");
+	navMenuBtn.classList.add("m-nav--menu-button");
+	nav.insertBefore(navMenuBtn, nav.firstChild);
 	
-	navMenu.innerHTML = `<img src='https://svgshare.com/i/5u4.svg' class='m--nav-menu-button'/>`;
+	navMenuBtn.innerHTML = `<img src='https://svgshare.com/i/5u4.svg' class='m--nav-menu-button'/>`;
 }
 //#endregion
 

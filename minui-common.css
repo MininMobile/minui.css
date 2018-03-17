@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .m-nav .m-nav--menu {
+	/* soon tm */
+}
+
+.m-nav .m-nav--menu-button {
 	flex: 1;
 
 	display: flex;
