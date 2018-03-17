@@ -28,9 +28,24 @@ function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master
 
 	// Run Other Functions
 	createButtons();
+	createNavbar();
 }
 
 //// CSS FX ////
+
+//#region Navbar
+function createNavbar() {
+	var nav = document.getElementsByClassName("m-nav")[0];
+
+	if (nav.classList.contains("m-nav--fixed")) {
+		var body = document.getElementsByTagName("body")[0];
+		var padding = document.createElement("div");
+		padding.classList.add("m-nav--height");
+
+		body.insertBefore(padding, body.firstChild);
+	}
+}
+//#endregion
 
 //#region Buttons
 function createButtons() {

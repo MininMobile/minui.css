@@ -25,6 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: 0 0 0.7em black;
 }
 
+.m-nav--fixed {
+	position: fixed;
+	top: 0;
+}
+
 .m-btn {
 	border-radius: 3px;
 	padding: 0.75em 1em;
@@ -59,6 +64,10 @@ h1, h2, h3, h4, h5, h6 {
 		min-height: 3rem;
 		line-height: 3rem;
 	}
+
+	.m-nav--height {
+		height: 3rem;
+	}
 }
 
 @media (min-width: 480px) {
@@ -66,5 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 		height: 4rem;
 		min-height: 4rem;
 		line-height: 4rem;
+	}
+
+	.m-nav--height {
+		height: 4rem;
 	}
 }
