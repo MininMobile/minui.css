@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 	min-height: 5em;
 	max-height: 20em;
 	display: block;
-	box-shadow: 0 3px 0.7em black;
+	box-shadow: 0 2px 0.7em black;
 }
 
 .m-card:not(.m-card--image) {
