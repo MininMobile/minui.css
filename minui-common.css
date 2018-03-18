@@ -89,12 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10%;
 }
 
-.m-section {
+.m-section--header {
 	display: flex;
 	align-content: center;
-}
-
-.m-section--header {
 	justify-content: center;
 	flex-direction: column;
 }
@@ -120,16 +117,27 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 20em;
 	min-height: 5em;
 	max-height: 20em;
-	display: inline-block;
+	display: block;
 	box-shadow: 0 3px 0.7em black;
 }
 
-.m-card p {
+.m-card:not(.m-card--image) {
 	padding: 1.5em;
 }
 
-.m-card--image {
+.m-card--image *:not(img):not(.m-btn) {
+	padding: 1.5em;
+	padding-bottom: 0;
+	margin: 0;
+}
 
+.m-card--image {
+	padding-bottom: 1.5em;
+}
+
+.m-card--image .m-btn {
+	margin: 1.5em;
+	margin-bottom: 0;
 }
 
 .m-card--image img {
@@ -141,6 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 3px;
 	padding: 0.75em 1em;
 	border: none;
+	display: inline-block;
 	overflow: hidden;
 	position: relative;
 	transition: all 0.1s;
