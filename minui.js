@@ -77,7 +77,7 @@ function createNavbar(dark) {
 //#region Buttons
 function createButtons() {
 	let buttons = document.getElementsByClassName("m-btn");
-	Array.prototype.forEach.call(buttons, (b) => b.addEventListener("click", createRipple));
+	Array.prototype.forEach.call(buttons, (b) => b.addEventListener("mousedown", createRipple));
 }
 
 /** @param {Element} e */

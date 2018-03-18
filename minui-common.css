@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10%;
 }
 
+.m-section {
+	width: 100%;
+}
+
 .m-section--header {
 	display: flex;
 	align-content: center;
@@ -112,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .m-card {
 	border-radius: 3px;
-	margin: 0.3em;
+	margin: 1em;
 	min-width: 5em;
 	max-width: 20em;
 	min-height: 5em;
@@ -123,6 +127,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .m-card:not(.m-card--image) {
 	padding: 1.5em;
+}
+
+.m-card.m-card--inline {
+	display: inline-block;
 }
 
 .m-card--image *:not(img):not(.m-btn) {
@@ -211,5 +219,9 @@ h1, h2, h3, h4, h5, h6 {
 
 	.m-nav--height {
 		height: 4rem;
+	}
+
+	.m-section * {
+		margin: 0 auto;
 	}
 }
