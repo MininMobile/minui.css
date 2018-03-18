@@ -28,6 +28,10 @@ body {
 	background: #222;
 }
 
+.m-section--shadow {
+	background: #111;
+}
+
 .m-btn {
 	background: #111;
 	color: #ddd;

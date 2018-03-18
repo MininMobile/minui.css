@@ -25,6 +25,10 @@
 	background: #999;
 }
 
+.m-section--shadow {
+	background: #111;
+}
+
 .m-btn {
 	background: #fff;
 	color: #000;

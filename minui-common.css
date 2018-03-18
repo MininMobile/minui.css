@@ -85,18 +85,24 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 1.5em
 }
 
-.m-section {
+.m-section--header {
 	display: flex;
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-.m-section--title {
+.m-section--shadow {
+	box-shadow: 0 0 0.7em black;
+}
+
+.m-section--header .m-section--title {
+	font-size: 300%;
 	margin: 0 auto;
 }
 
-.m-section--sub {
+.m-section--header .m-section--sub {
+	font-size: 150%;
 	margin: 0 auto;
 }
 
