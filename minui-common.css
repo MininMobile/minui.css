@@ -85,9 +85,16 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 1.5em
 }
 
-.m-section--header {
+.m-section:not(.m-section--header) {
+	padding: 10%;
+}
+
+.m-section {
 	display: flex;
 	align-content: center;
+}
+
+.m-section--header {
 	justify-content: center;
 	flex-direction: column;
 }
@@ -104,6 +111,30 @@ h1, h2, h3, h4, h5, h6 {
 .m-section--header .m-section--sub {
 	font-size: 150%;
 	margin: 0 auto;
+}
+
+.m-card {
+	border-radius: 3px;
+	margin: 0.3em;
+	min-width: 5em;
+	max-width: 20em;
+	min-height: 5em;
+	max-height: 20em;
+	display: inline-block;
+	box-shadow: 0 3px 0.7em black;
+}
+
+.m-card p {
+	padding: 1.5em;
+}
+
+.m-card--image {
+
+}
+
+.m-card--image img {
+	border-radius: 3px 3px 0 0;
+	width: 100%;
 }
 
 .m-btn {
@@ -141,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 3rem;
 	}
 
-	.m-section {
+	.m-section--header {
 		height: calc(100vh - 3rem);
 	}
 
@@ -161,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 4rem;
 	}
 
-	.m-section {
+	.m-section--header {
 		height: calc(100vh - 4rem);
 	}
 
