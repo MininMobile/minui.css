@@ -27,8 +27,9 @@ function init(dark, locs = ["https://raw.githack.com/minin-prod/minui.css/master
 	h.appendChild(themeLink);
 
 	// Run Other Functions
-	createButtons();
 	createNavbar(dark);
+	createFooter();
+	createButtons();
 }
 
 //// CSS FX ////
@@ -96,5 +97,15 @@ function createRipple(e) {
 	c.classList.add("ripple");
 
 	setTimeout(() => { c.remove(); }, 300);
+}
+//#endregion
+
+//#region Footer
+function createFooter() {
+	var linsts = document.getElementsByClassName("m-footer--linst");
+
+	for (const linst of document.getElementsByClassName("m-footer--linst")) {
+		linst.firstElementChild.insertAdjacentHTML("afterend", `<hr class="m-sep" />`);
+	}
 }
 //#endregion
