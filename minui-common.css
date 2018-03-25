@@ -158,6 +158,10 @@ h1, h2, h3, h4, h5, h6 {
 	align-content: center;
 }
 
+.m-footer h1 {
+	line-height: 250%;
+}
+
 .m-btn {
 	border-radius: 3px;
 	padding: 0.75em 1em;
