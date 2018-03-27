@@ -41,3 +41,8 @@
 .m-btn--flat:focus {
 	background: rgba(0,0,0,0.1)
 }
+
+.m-footer {
+	color: white;
+	background: #6ec6ff;
+}
