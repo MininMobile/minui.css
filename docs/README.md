@@ -62,3 +62,17 @@ Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.c
 	</div>
 </nav>
 ```
+
+## Sections
+### Header Sections
+```html
+<!--    minui section,
+	displays text (.m-section--header),
+	opaque background and shadow (.m-section--shadow)    -->
+<div class="m-section m-section--header m-section--shadow">
+	<!-- add title to section -->
+	<h1 class="m-section--title">Hello!</h1>
+	<!-- add subtitle to section -->
+	<p class="m-section--sub">Welcome to my Website</p>
+</div>
+```
