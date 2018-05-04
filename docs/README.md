@@ -83,3 +83,30 @@ Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.c
 	<!-- code for cards or other ways to display information -->
 </div>
 ```
+
+## Cards
+### Regular Card
+```html
+<!--    minui card,
+	displays nicely along with other cards in a line (.m-card--inline)    -->
+<div class="m-card m-card--inline">
+	<!-- card text -->
+	<p>My GitHub Account</p>
+	<!-- flat button -->
+	<a class="m-btn m-btn--flat" href="https://github.com/MininMobile">MininMobile</a>
+</div>
+```
+### Image Card
+```html
+<!--    minui card,
+	displays nicely along with other cards in a line (.m-card--inline)
+	has image placed above card content (.m-card--image)    -->
+<div class="m-card m-card--inline m-card--image">
+	<!-- card image -->
+	<img src="img/github.jpg">
+	<!-- card text -->
+	<p>My GitHub Account</p>
+	<!-- card link; flat button -->
+	<a class="m-btn m-btn--flat" href="https://github.com/MininMobile">MininMobile</a>
+</div>
+```
