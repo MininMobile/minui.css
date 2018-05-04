@@ -3,8 +3,18 @@ But by the time you have a *decent* looking website you have 12 tabs open scratc
 
 # Index
 - [Usage](#usage)
+	* [Installation](#installation)
+	* [Example](#example)
 - [init() Arguments](#init-arguments)
+	* [theme](#theme)
+	* [files](#files)
 - [Examples](#examples)
+	* [.m-nav](#navbar)
+	* [.m-section](#sections)
+	* [.m-btn](#buttons)
+	* [.m-card](#cards)
+	* [.m-footer](#footer)
+
 
 # Usage
 ## Installation
