@@ -1,6 +1,12 @@
 # Toot Toot it's Time for CSS
 But by the time you have a *decent* looking website you have 12 tabs open scratching your head on how to center something without flexboxes, well, the soloution is simple, USE FLEXBOXES. (and minui.css 😘)
 
+# Index
+- [Usage](#usage)
+- [init() Arguments](#init-arguments)
+- [IDs](#ids)
+- [Classes](#classes)
+
 # Usage
 ## Installation
 Add this line of code to your head to get the file served from GitHub;
@@ -39,3 +45,7 @@ Boolean, `false` by default, if true loads dark theme.
 
 ## files
 Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.css"]` by default, common loads styles & light/dark loads colors.
+
+# IDs
+
+# Classes
