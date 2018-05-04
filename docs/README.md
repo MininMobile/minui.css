@@ -13,4 +13,14 @@ If you want to download the JS file and serve it from your webserver, [right cli
 <script src="minui.js"></script>
 ```
 
-Then, at the end of the page, run the `init();` function to style your webpage!
+## Example
+Add the script tag getting the js file to `<head>`;
+```
+<head>
+	<title>My Website</title>
+	<script src="minui.js"></script>
+</head>
+```
+Then at the end of the page run the `init` function;
+
+*code here later pls*
