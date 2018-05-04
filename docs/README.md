@@ -48,12 +48,15 @@ Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.c
 # Examples
 ## Navbar
 ```html
+<!-- minui navbar, fixed to top of page -->
 <nav class="m-nav m-nav--fixed">
+	<!-- create link entries for sidebar -->
 	<div class="m-nav--menu">
 		<a href="index.html">Index</a>
 		<a href="contact.html">Contact</a>
 		<a href="about.html">About</a>
 	</div>
+	<!-- add text to right-most part of navbar -->
 	<div class="m-nav--data">
 		<p>Not Logged In...</p>
 	</div>
