@@ -4,8 +4,7 @@ But by the time you have a *decent* looking website you have 12 tabs open scratc
 # Index
 - [Usage](#usage)
 - [init() Arguments](#init-arguments)
-- [IDs](#ids)
-- [Classes](#classes)
+- [Examples](#examples)
 
 # Usage
 ## Installation
@@ -46,6 +45,17 @@ Boolean, `false` by default, if true loads dark theme.
 ## files
 Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.css"]` by default, common loads styles & light/dark loads colors.
 
-# IDs
-
-# Classes
+# Examples
+## Navbar
+```html
+<nav class="m-nav m-nav--fixed">
+	<div class="m-nav--menu">
+		<a href="index.html">Index</a>
+		<a href="contact.html">Contact</a>
+		<a href="about.html">About</a>
+	</div>
+	<div class="m-nav--data">
+		<p>Not Logged In...</p>
+	</div>
+</nav>
+```
