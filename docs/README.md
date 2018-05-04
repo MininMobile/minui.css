@@ -76,3 +76,10 @@ Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.c
 	<p class="m-section--sub">Welcome to my Website</p>
 </div>
 ```
+### Regular Sections
+```html
+<!-- minui section -->
+<div class="m-section">
+	<!-- code for cards or other ways to display information -->
+</div>
+```
