@@ -21,6 +21,21 @@ Add the script tag getting the js file to `<head>`;
 	<script src="minui.js"></script>
 </head>
 ```
-Then at the end of the page run the `init` function;
 
-*code here later pls*
+Then at the end of the page run the `init` function;
+```
+<body>
+	<!-- code -->
+	
+	<script> init(); <script>
+</body>
+```
+
+# init() Arguments
+> `init([theme, files]);`
+
+## theme
+Boolean, `false` by default, if true loads dark theme.
+
+## files
+Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.css"]` by default, common loads styles & light/dark loads colors.
