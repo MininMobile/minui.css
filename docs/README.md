@@ -130,3 +130,28 @@ Used for modals already with emphasis using shadows, adhering to material design
 	<a class="m-btn m-btn--flat" href="https://github.com/MininMobile">MininMobile</a>
 </div>
 ```
+
+## Footer
+```html
+<!-- minui footer -->
+<footer class="m-footer">
+	<!-- create footer linst (list with a line under the first item/title) -->
+	<div class="m-footer--linst">
+		<p>Social</p>
+		<a href="https://twitter.com">Twitter</a><br>
+		<a href="https://tumblr.com">Tumblr</a><br>
+		<a href="https://fullsend.com">#fuckyoutube</a><br>
+	</div>
+	
+	<!-- copyright disclaimer/footer text -->
+	<h1>© Bob Bobbo 2018-20xx</h1>
+	
+	<!-- another footer linst to balance previous linst -->
+	<div class="m-footer--linst">
+		<p>Numbers</p>
+		<p>1.1.1.1</p>
+		<p>42 + 0 = 420</p>
+		<p>6 + 9 = ( ͡° ͜ʖ ͡°)</p>
+	</div>
+</footer>
+```
