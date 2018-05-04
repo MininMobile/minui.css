@@ -85,6 +85,25 @@ Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.c
 </div>
 ```
 
+## Buttons
+### Regular Buttons
+```html
+<!-- creates button with <button> tag -->
+<button class="m-btn">Button</button>
+
+<!-- creates button with <a> tag -->
+<a class="m-btn" href="#">Link</a>
+```
+### Flat Buttons
+Used for modals already with emphasis using shadows, adhering to material design guidelines.
+```html
+<!-- creates button with <button> tag -->
+<button class="m-btn m-btn--flat">Flat Button</button>
+
+<!-- creates button with <a> tag -->
+<a class="m-btn m-btn--flat" href="#">Flat Link</a>
+```
+
 ## Cards
 ### Regular Card
 ```html
