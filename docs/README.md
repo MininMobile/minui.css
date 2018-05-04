@@ -48,7 +48,8 @@ Array, rawgit versions of `["minui-common.css", "minui-light.css", "minui-dark.c
 # Examples
 ## Navbar
 ```html
-<!-- minui navbar, fixed to top of page -->
+<!--    minui navbar,
+	fixed to top of page (.m-nav--fixed)    -->
 <nav class="m-nav m-nav--fixed">
 	<!-- create link entries for sidebar -->
 	<div class="m-nav--menu">
