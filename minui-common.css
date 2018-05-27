@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .m-nav {
 	width: 100%;
-	box-shadow: 0 0 0.7em black;
+	box-shadow: 0 0 0.7em #000;
 	z-index: 10;
 	display: flex;
 }
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: fixed;
 	height: 100%;
 	overflow: auto;
-	box-shadow: 0 0 0.7em #444;
+	box-shadow: 0 0 0.7em #000;
 	transition: all 0.2s;
 }
 
