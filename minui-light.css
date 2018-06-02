@@ -9,12 +9,12 @@
 
 .m-nav {
 	background-color: #0069c0;
-	color: #fff;
+	color: #fff !important;
 }
 
 .m-nav--menu {
 	background: #ddd;
-	color: #000;
+	color: #000 !important;
 }
 
 .m-nav--menu * {
